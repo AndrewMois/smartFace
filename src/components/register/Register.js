@@ -23,7 +23,7 @@ class Register extends React.Component {
   };
 
   onSubmitRegister = () => {
-    fetch("https://smartface-api.onrender.com/register", {
+    fetch("http://localhost:3000/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -42,7 +42,7 @@ class Register extends React.Component {
   };
 
   render() {
-    const { onRouteChange } = this.props;
+    // const { onRouteChange } = this.props;
     return (
       <article className="br3 ba shadow-5 b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
         <main className="pa4 black-80">

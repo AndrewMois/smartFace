@@ -7,11 +7,25 @@ const FaceRecognition = ({ imageURL, box }) => {
       <div className="absolute mt3">
         <img
           id="inputImage"
-          alt="your search"
+          alt=""
           src={imageURL}
           width="500px"
           height="auto"
         />
+        {box ? (
+          <div
+            className="boundingBox"
+            style={{
+              top: box.topRow,
+              right: box.rightCol,
+              bottom: box.bottomRow,
+              left: box.leftCol,
+            }}
+          ></div>
+        ) : (
+          <div></div>
+        )}
+
         <div
           className="boundingBox"
           style={{

@@ -12,6 +12,7 @@ const NavigationLinkForm = ({ onInputChange, onButtonSubmit }) => {
           <input
             type="text"
             className="f4 pa2 w-70 center"
+            placeholder="Enter image URL of any face"
             onChange={onInputChange}
           />
           <button
